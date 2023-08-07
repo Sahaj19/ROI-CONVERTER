@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROI Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-1">
+        <div class="left-container">
+          <div class="input-box">
+            <label for="Monthly-traffic" class="labels"
+              >Your Avg. Monthly Traffic:</label
+            >
+            <input type="text" id="Monthly-traffic" class="inputs" />
+          </div>
+          <div class="input-box">
+            <label for="Monthly-orders" class="labels"
+              >Your Avg. Monthly Orders:</label
+            >
+            <input type="text" id="Monthly-orders" class="inputs" />
+          </div>
+          <div class="input-box">
+            <label for="Monthly-revenue" class="labels"
+              >Your Avg. Monthly Revenue:</label
+            >
+            <input type="text" id="Monthly-revenue" class="inputs" />
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="guarantee">
+            <p>
+              Our team gurantees that you will see a
+              <span>minimum 20% lift</span> in the first 3 months of our
+              service.
+            </p>
+          </div>
+          <div class="range">
+            <p id="selected-value">30%</p>
+            <input
+              type="range"
+              id="slider"
+              min="0"
+              max="100"
+              step="1"
+              value="30"
+            />
+            <p class="range-below-para">
+              Slide to calculate impact on revenue at various conversation lifts
+            </p>
+          </div>
+          <div class="time-period">
+            <p>Choose Your Time Frame</p>
+            <div class="time-buttons">
+              <button id="btn3months" class="btn">3 months</button>
+              <button id="btn6months" class="btn">6 months</button>
+              <button id="btn9months" class="btn">9 months</button>
+              <button id="btn12months" class="btn">12 months</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <h1 class="logo">ROI</h1>
+        <div class="dynamic-text">
+          <h2>
+            A <span class="ROI-percent">(ROI%)</span> Return On Investment!!!!!
+          </h2>
+          <p>
+            With a <span id="slider-value" class="red">(slider%)</span> increase
+            in your conversion rates after utilizing our CRO services, you will
+            generate
+            <span id="result-amount" class="red">(result amount)</span>
+            incremental revenue in
+            <span class="selected-time red">(time)</span> , Post
+            <span class="selected-time red">(time)</span> the ROI on our
+            services is <span id="ROI" class="red">(ROI)</span
+            ><span class="ROI-percent red">(ROI%)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
