@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROI Converter</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <div class="container">
@@ -14,25 +15,25 @@
             <label for="Monthly-traffic" class="labels"
               >Your Avg. Monthly Traffic:</label
             >
-            <input type="text" id="Monthly-traffic" class="inputs" />
+            <input type="number" id="Monthly-traffic" class="inputs" />
           </div>
           <div class="input-box">
             <label for="Monthly-orders" class="labels"
               >Your Avg. Monthly Orders:</label
             >
-            <input type="text" id="Monthly-orders" class="inputs" />
+            <input type="number" id="Monthly-orders" class="inputs" />
           </div>
           <div class="input-box">
             <label for="Monthly-revenue" class="labels"
               >Your Avg. Monthly Revenue:</label
             >
-            <input type="text" id="Monthly-revenue" class="inputs" />
+            <input type="number" id="Monthly-revenue" class="inputs" />
           </div>
         </div>
         <div class="right-container">
           <div class="guarantee">
             <p>
-              Our team gurantees that you will see a
+              Our team guarantees that you will see a
               <span>minimum 20% lift</span> in the first 3 months of our
               service.
             </p>
@@ -75,8 +76,8 @@
             <span id="result-amount" class="red">(result amount)</span>
             incremental revenue in
             <span class="selected-time red">(time)</span> , Post
-            <span class="selected-time red">(time)</span> the ROI on our
-            services is <span id="ROI" class="red">(ROI)</span
+            <span class="selected-time">(time)</span> the ROI on our services is
+            <span id="ROI" class="red">(ROI)</span
             ><span class="ROI-percent red">(ROI%)</span>
           </p>
         </div>
