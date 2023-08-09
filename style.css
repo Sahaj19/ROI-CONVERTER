@@ -248,5 +248,10 @@ input[type="range"] {
     font-weight: 700;
 }
 
+#result-amount{
+    color: #fff;
+    background-color: #1685DD;
+}
+
 
 
