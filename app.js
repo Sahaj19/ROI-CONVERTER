@@ -67,8 +67,13 @@ function calculateAndDisplayROI() {
   ROIPercent = Math.min(ROIPercent, 100);
   console.log("ROIPercent", ROIPercent);
 
-  document.querySelector("#result-amount").textContent = result.toFixed(0);
-  document.querySelector("#ROI").textContent = ROI.toFixed(0);
+  let RESULT = document.querySelector("#result-amount");
+  // parseInt(RESULT.textContent.toFixed(0));
+  RESULT.textContent = parseInt(result.toFixed(0));
+
+  let roi = document.querySelector("#ROI");
+  // parseInt(roi.textContent.toFixed(0));
+  roi.textContent = parseInt(ROI.toFixed(0));
 
   let ROIPercentElements = document.querySelectorAll(".ROI-percent");
   for (let element of ROIPercentElements) {
