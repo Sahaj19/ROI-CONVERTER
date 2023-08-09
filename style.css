@@ -166,10 +166,11 @@ input[type="range"] {
     cursor: pointer;
 }
 
-.btn:focus{
+.btn:focus , .focus{
     color: #fff;
     background-color: #000;
 }
+
 
 #btn3months {
     border-top-left-radius:30px;

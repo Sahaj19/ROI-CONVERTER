@@ -12,19 +12,36 @@ slider.addEventListener("input", function () {
 });
 
 //dynamic month setter
-let finalTime = 0;
+let finalTime = 6;
 let btns = document.querySelectorAll(".btn");
 let times = document.querySelectorAll(".selected-time");
+
 for (let btn of btns) {
   btn.addEventListener("click", function () {
     finalTime = parseInt(btn.textContent.slice(0, 2));
     for (let time of times) {
       time.textContent = btn.textContent;
     }
+
+    for (let btn of btns) {
+      btn.classList.remove("focus");
+    }
+
+    btn.classList.add("focus");
     calculateAndDisplayROI();
   });
 }
 
+for (let time of times) {
+  time.textContent = `${finalTime} months`;
+}
+
+let defaultButton = document.querySelector("#btn6months");
+if (defaultButton) {
+  defaultButton.classList.add("focus");
+}
+
+//result calculator
 function calculateAndDisplayROI() {
   let traffic = parseInt(document.querySelector("#Monthly-traffic").value);
   let orders = parseInt(document.querySelector("#Monthly-orders").value);
@@ -35,22 +52,28 @@ function calculateAndDisplayROI() {
     ((orders / traffic) * (sliderValue / 100) * traffic * (revenue / orders) -
       revenue) *
     finalTime;
-  console.log(result);
+
+  console.log("result = ", result);
 
   let cost = finalTime * 3500;
-  console.log(cost);
-  let ROI = result - cost;
-  console.log(ROI);
-  let ROIPercent = result !== 0 ? (ROI / result) * 100 : 0;
-  ROIPercent = Math.min(ROIPercent, 100);
-  console.log(ROIPercent);
+  console.log("cost", cost);
 
-  document.querySelector("#result-amount").textContent = result.toFixed(2);
-  document.querySelector("#ROI").textContent = ROI.toFixed(2);
+  let ROI = result - cost;
+  console.log("ROI = ", ROI);
+
+  let ROIPercent = result !== 0 ? (ROI / result) * 100 : 0;
+
+  // let ROIPercent = (ROI / result) * 100;
+  ROIPercent = Math.min(ROIPercent, 100);
+  console.log("ROIPercent", ROIPercent);
+
+  document.querySelector("#result-amount").textContent = result.toFixed(0);
+  document.querySelector("#ROI").textContent = ROI.toFixed(0);
+
   let ROIPercentElements = document.querySelectorAll(".ROI-percent");
-  ROIPercentElements.forEach((element) => {
-    element.textContent = `(${ROIPercent.toFixed(2)}%)`;
-  });
+  for (let element of ROIPercentElements) {
+    element.textContent = `(${ROIPercent.toFixed(0)}%)`;
+  }
 }
 
 calculateAndDisplayROI();
