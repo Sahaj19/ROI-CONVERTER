@@ -4,7 +4,7 @@
 
 ### Formulas used
 <ol>
-    <li>result = (((((orders/traffic) * (sliderValue / 100)) * traffic) * (revenue / orders)) - revenue) * finalTime<li>
+    <li>result = (((((orders/traffic) * (sliderValue / 100)) * traffic) * (revenue / orders)) - revenue) * finalTime</li>
     <li>ROI = result - cost</li>
     <li>Cost = finalTime * 3500</li>
     <li>ROI% = (ROI/Result) * 100</li>
