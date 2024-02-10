@@ -1,106 +1,60 @@
-@media(max-width : 1300px){
-    .range-below-para {
-        font-size: 20px;
-        text-align: center;
-        padding: 0 10px 0 10px;
-}
-}
+@media (max-width: 800px) {
+  .logo {
+    font-size: 100px;
+  }
 
-@media(max-width:1100px){
-    .container-2 {
-        width: 96%;
-    }
-    .labels {
-        text-align: center;
-    }
-}
+  .container-1 {
+    flex-basis: 65%;
+    flex-direction: column;
+  }
 
-@media(max-width:800px) {
-    .logo {
-        font-size: 100px;
-    }
+  .inputs {
+    width: 90%;
+  }
 
-    .container-1{
-        flex-basis: 65%;
-        flex-direction: column;
-    }
+  .right-container {
+    padding: 20px;
+    gap: 20px;
+  }
 
-    .left-container{
-        flex-basis: 25%;
-        display: flex;
-        flex-direction: row;
-    }
+  .container-2 {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-    .right-container {
-        padding: 20px;
-        
-
-    .input-box {
-        height: 100px;
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
+  .logo {
+    font-size: 120px;
+  }
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
+  body {
+    overflow: auto;
+  }
 
-    body {
-        overflow: auto;
-    }
-    .container {
-        box-shadow: none;
-        border: none;
-        height: 100vh;
-        width: 100vw;
-        margin: 10px;
-    }
+  .container {
+    box-shadow: none;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+    margin: 10px;
+  }
 
-    .container-1{
-        display: flex;
-        flex-direction: column;
-    }
+  .labels {
+    font-size: 20px;
+  }
 
-    .left-container{
-        display: flex;
-        flex-direction: column;
-    }
+  .container-2 h2 {
+    text-align: center;
+  }
 
-    .input-box {
-        width: 90%;
-        border: 1px solide #000;
-    }
-    .labels{
-        font-size: 20px;
-    }
-    .inputs{
-        width: 90%;
-    }
-    .right-container{
-        justify-content: space-between;
-    }
+  .container-2 p {
+    text-align: center;
+  }
+}
 
-
-    .container-2{
-        flex-basis: 35%;
-        width: 90%;
-        flex-direction: column;
-        margin: 15px;
-        padding: 0 10px 10px 10px;
-    }
-
-    .logo {
-        font-size: 70px;
-    }
-
-    .container-2 h2 {
-        text-align: center;
-    }
-
-    .container-2 p {
-        text-align: center;
+@media(max-width:380px) {
+    .btn {
+        padding: 5px;
     }
 }

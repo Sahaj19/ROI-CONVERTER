@@ -2,186 +2,178 @@
 
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
 }
-
 
 /* It contains everything */
 .container {
-    height: 90vh;
-    width: 90vw;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #FED4E5;
-    box-shadow: 2px 2px 10px #000;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
+  max-width: 1200px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fed4e5;
+  box-shadow: 2px 2px 10px #000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
 }
-
 
 /* The top container  */
-.container-1{
-    /* border: 1px solid green; */
-    flex-basis: 65%;
-    display: flex;
+.container-1 {
+  flex-basis: 65%;
+  display: flex;
 }
+
 /* top left container content */
 .left-container {
-    flex-basis: 35%;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .input-box {
-    /* border: 1px solid purple; */
-    height: 120px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 120px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* input-boxes styling */
-.labels{
-    font-size: 18px;
-    font-weight: 700;
+.labels {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.inputs{
-    font-size: 20px;
-    font-weight: 100;
-    padding: 10px 20px;
-    width: 200px;
-    border-radius: 30px;
-    margin-top: 10px;
-    outline: none;
-    background-color: transparent;
-    border: 2px solid rgb(255, 0, 255 , 0.6);
-    text-align: center;
+.inputs {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 30px;
+  margin-top: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgb(255, 0, 255, 0.6);
+  text-align: center;
 }
-
-
 
 /* top right container content */
 .right-container {
-    flex-basis: 65%;
-    /* border: 1px solid purple; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-/* part-1  */
-.guarantee{
-    flex-basis: 20%;
-    /* border: 1px solid black; */
-    width: 90%;
+/***************************** part-1  ************************************/
+.guarantee {
+  flex-basis: 20%;
+  width: 90%;
 }
 
-.guarantee p{
-    font-size: 24px;
-    text-align: center;
-    font-weight: 600;
+.guarantee p {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
 }
 
-.guarantee p span{
-    color: red;
+.guarantee p span {
+  color: red;
 }
 
-/* part-2  */
-.range{
-    flex-basis: 30%;
-    padding: 10px 0;
-    border: 2px solid rgb(255, 123, 145);
-    border-radius: 80px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+/***************************** part-2 **************************************/
+.range {
+  flex-basis: 30%;
+  padding: 10px 0;
+  border: 2px solid rgb(255, 123, 145);
+  border-radius: 80px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#selected-value{
-    font-size: 25px;
+#selected-value {
+  font-size: 25px;
 }
 
-input[type="range"] {
-    width: 80%;
-    height: 5px;
-    background: linear-gradient(to right  , rgb(168, 67, 228 , 0.5) , rgb(241, 66, 193 , 1) );
-    margin-bottom: 5px;
-    border-radius: 10px;
-    outline: none;
-   -webkit-appearance: none; 
-    appearance: none; 
+input[type='range'] {
+  width: 80%;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(168, 67, 228, 0.5),
+    rgb(241, 66, 193, 1)
+  );
+  margin-bottom: 5px;
+  border-radius: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.range-below-para{
-    font-size: 18px;
-    font-weight: 700;
-    background-image: linear-gradient(to right ,tomato , #A843E4 , #F142C1 );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.range-below-para {
+  font-size: 18px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, tomato, #a843e4, #f142c1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  word-break: break-all;
+  word-wrap: break-word;
+  padding: 20px;
 }
 
-
-
-/* part-3 */
-
+/***************************** part-3 *********************************/
 .time-period {
-    flex-basis: 30%;
-    /* border: 1px solid black; */
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-basis: 30%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .time-period p {
-    font-size: 20px;
-    margin-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
-.time-buttons{
-    display: flex;
+.time-buttons {
+  display: flex;
 }
-
 
 .btn {
-    font-size: 15px;
-    font-weight: 500;
-    padding: 15px;
-    margin: 0 4px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    position: relative;
-    /* overflow: hidden; */
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px;
+  margin: 0 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
 }
 
-.btn::before{
-    content: "";
+.btn::before {
+  content: '';
   position: absolute;
   top: -2px;
   left: -2px;
@@ -189,70 +181,79 @@ input[type="range"] {
   bottom: -2px;
   z-index: -1;
   border: 2px solid transparent;
-  background-image: linear-gradient(to bottom ,#F142C1 ,tomato,#A843E4 ,#8E44F2 );
+  background-image: linear-gradient(
+    to bottom,
+    #f142c1,
+    tomato,
+    #a843e4,
+    #8e44f2
+  );
   border-radius: 5px;
 }
 
-.btn:hover{
-    cursor: pointer !important;
+.btn:hover {
+  cursor: pointer !important;
 }
 
-.btn:focus , .focus{
-    background: linear-gradient(to right bottom ,rgb(240, 118, 97),#FE6F6F,#F142C1 ,#A843E4 ,#8E44F2 );
+.btn:focus,
+.focus {
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 97),
+    #fe6f6f,
+    #f142c1,
+    #a843e4,
+    #8e44f2
+  );
 }
 
-
-
-
-
-/* The bottom container  */
-.container-2{
-    background-color: #f0e3e3;
-    border-radius: 80px;
-    flex-basis: 35%;
-    width: 70%;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+/************************* The bottom container  **************************/
+.container-2 {
+  background-color: #f0e3e3;
+  border-radius: 80px;
+  flex-basis: 35%;
+  width: 90%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .logo {
-    flex-basis: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 120px;
-    letter-spacing:-10px;
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 120px;
+  letter-spacing: -10px;
 }
 
-
-
-
-.dynamic-text{
-    flex-basis: 70%;
-    padding: 0 10px;
+.dynamic-text {
+  flex-basis: 70%;
+  padding: 0 20px;
 }
 
-.dynamic-text h2{
-    text-align: center;
-    margin-bottom: 10px;
+.dynamic-text h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .dynamic-text p {
-    font-size: 18px;
-    font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .red {
-    color: red;
-    font-weight: 700;
+  color: red;
+  font-weight: 700;
 }
 
-#result-amount{
-    color: #fff;
-    background-color: #1685DD;
+#result-amount {
+  color: #fff;
+  background-color: #1685dd;
 }
-
-
-
